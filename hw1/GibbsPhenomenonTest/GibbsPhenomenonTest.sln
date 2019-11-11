@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GibbsPhenomenonTest", "GibbsPhenomenonTest.csproj", "{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}.Debug|x64.ActiveCfg = Debug|x64
+		{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}.Debug|x64.Build.0 = Debug|x64
+		{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}.Release|x64.ActiveCfg = Release|x64
+		{52CD20AA-AB6D-4947-A996-CC37C8C2DCEF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE82FAEB-5412-4530-AA76-8605918CC294}
+	EndGlobalSection
+EndGlobal
