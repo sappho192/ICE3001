@@ -41,7 +41,7 @@
                     </d3:Chart>
                 </TabItem>
                 <TabItem Header="Error">
-                    <d3:Chart BottomTitle="t" LeftTitle="x(t)"
+                    <d3:Chart BottomTitle="t" LeftTitle="eN(t)"
                   Margin="8">
                         <d3:LineGraph Name="eNGraph" Description="eN(t)"
                                       Stroke="Black" StrokeThickness="2"/>
