@@ -19,7 +19,8 @@
                 <Label Content="N:"/>
                 <TextBox Name="tbN"
                          Text="10" MinWidth="32"
-                         VerticalAlignment="Center"/>
+                         VerticalAlignment="Center"
+                         KeyDown="TbN_KeyDown"/>
                 <Button Name="btApply"
                         Content="적용"
                         Margin="4"
@@ -30,6 +31,12 @@
                          Text="0" MinWidth="60"
                          IsReadOnly="True"
                          VerticalAlignment="Center"/>
+                <Label Content="RMSE:"/>
+                <TextBox Name="tbRMSError"
+                         Text="0" MinWidth="60"
+                         IsReadOnly="True"
+                         VerticalAlignment="Center"/>
+
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
