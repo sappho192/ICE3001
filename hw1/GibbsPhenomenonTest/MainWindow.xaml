@@ -42,10 +42,31 @@
         <Grid Grid.Row="1">
             <TabControl>
                 <TabItem Header="Approx.">
-                    <d3:Chart BottomTitle="t" LeftTitle="x(t)"
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="9*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                            <Label Content="Min(xN(t)):"/>
+                            <TextBox Name="tbMin"
+                         Text="0" MinWidth="60"
+                         IsReadOnly="True"
+                         VerticalAlignment="Center"/>
+                            <Label Content="Max(xN(t)):"/>
+                            <TextBox Name="tbMax"
+                         Text="0" MinWidth="60"
+                         IsReadOnly="True"
+                         VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <d3:Chart Grid.Row="1" BottomTitle="t" LeftTitle="x(t)"
                   Margin="8">
-                        <Grid Name="Graphs"/>
-                    </d3:Chart>
+                            <Grid Name="Graphs"/>
+                        </d3:Chart>
+
+                    </Grid>
                 </TabItem>
                 <TabItem Header="Error">
                     <d3:Chart BottomTitle="t" LeftTitle="eN(t)"

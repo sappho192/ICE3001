@@ -40,10 +40,17 @@ namespace GibbsPhenomenonTest
 
             InitializeComponent();
             tbN.Text = test.N.ToString();
-
             InitializeApproxTab();
             InitializeErrorTab();
+
+            UpdateMinMax_xN_t();
             UpdateErrors();
+        }
+
+        private void UpdateMinMax_xN_t()
+        {
+            tbMin.Text = xN_t.Min().ToString();
+            tbMax.Text = xN_t.Max().ToString();
         }
 
         private void UpdateErrors()
@@ -112,6 +119,7 @@ namespace GibbsPhenomenonTest
                 test.N = result;
                 UpdateGraphs();
                 UpdateErrors();
+                UpdateMinMax_xN_t();
             }
             else
             {
