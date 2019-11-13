@@ -25,10 +25,10 @@ namespace GibbsPhenomenonTest
         private ApproxTest test;
         private const int FROM = 0;
         private const int TO = 2;
-        double[] dis_t;
-        double[] x_t;
-        double[] xN_t;
-        double[] eN_t;
+        private double[] dis_t;
+        private double[] x_t;
+        private double[] xN_t;
+        private double[] eN_t;
 
         private LineGraph graph_x_t;
         private LineGraph graph_xN_t;
