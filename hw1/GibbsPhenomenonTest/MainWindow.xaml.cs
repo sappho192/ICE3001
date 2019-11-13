@@ -22,7 +22,7 @@ namespace GibbsPhenomenonTest
     /// </summary>
     public partial class MainWindow : Window
     {
-        private ApproxTest test;
+        private readonly ApproxTest test;
         private const int FROM = 0;
         private const int TO = 2;
         private double[] dis_t;
