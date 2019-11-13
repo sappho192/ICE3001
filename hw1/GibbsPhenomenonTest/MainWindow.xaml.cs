@@ -77,7 +77,7 @@ namespace GibbsPhenomenonTest
 
         private void InitializeErrorTab()
         {
-            RefreshErrorGraphs();
+            UpdateErrorGraphs();
         }
 
         private void InitializeApproxTab()
@@ -118,7 +118,7 @@ namespace GibbsPhenomenonTest
             if (uint.TryParse(tbN.Text, out uint result) && result != 0)
             {
                 test.N = result;
-                RefreshGraphs();
+                UpdateGraphs();
                 UpdateErrors();
             }
             else
@@ -127,13 +127,13 @@ namespace GibbsPhenomenonTest
             }
         }
 
-        private void RefreshGraphs()
+        private void UpdateGraphs()
         {
-            RefreshApproxGraphs();
-            RefreshErrorGraphs();
+            UpdateApproxGraphs();
+            UpdateErrorGraphs();
         }
 
-        private void RefreshErrorGraphs()
+        private void UpdateErrorGraphs()
         {
             eN_t = x_t.Zip(xN_t, (a, b) => a - b).ToArray();
 
@@ -147,7 +147,7 @@ namespace GibbsPhenomenonTest
             eNGraph.Plot(dis_t, eN_t);
         }
 
-        private void RefreshApproxGraphs()
+        private void UpdateApproxGraphs()
         {
             dis_t = Approx.GetDiscreteT(FROM, TO, test.Delta_t);
             x_t = Approx.SetOf(test.x_t, FROM, TO, test.Delta_t);
