@@ -48,6 +48,12 @@ namespace GibbsPhenomenonTest
 
         private void UpdateAbsErr()
         {
+            /*
+             * eN_t :  -1, +0.4, -0.2, +2
+             * eN_t.Min() == -1 => +1
+             * eN_t.Max() == +2 => +2
+             * 각각의 절댓값을 구하면?
+             */
             var absMin = Math.Abs(eN_t.Min());
             var absMax = Math.Abs(eN_t.Max());
             tbAbsError.Text = (absMin > absMax ? absMin : absMax).ToString();
