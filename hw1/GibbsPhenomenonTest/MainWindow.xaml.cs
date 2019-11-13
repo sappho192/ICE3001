@@ -85,7 +85,6 @@ namespace GibbsPhenomenonTest
             x_t = Approx.SetOf(test.x_t, FROM, TO, test.Delta_t);
             xN_t = Approx.SetOf(test.xN_t, FROM, TO, test.Delta_t, test.N);
 
-            //printBox(string.Join(",", x_t));
             graph_x_t = new LineGraph();
             Graphs.Children.Add(graph_x_t);
             graph_x_t.Description = "x(t)";
@@ -93,19 +92,12 @@ namespace GibbsPhenomenonTest
             graph_x_t.StrokeThickness = 2;
             graph_x_t.Plot(dis_t, x_t);
 
-            //printBox("xN(t)");
-            //printBox(string.Join(",", xN_t));
             graph_xN_t = new LineGraph();
             Graphs.Children.Add(graph_xN_t);
             graph_xN_t.Description = "xN(t)";
             graph_xN_t.Stroke = Brushes.Gray;
             graph_xN_t.StrokeThickness = 2;
             graph_xN_t.Plot(dis_t, xN_t);
-        }
-
-        private void printBox(string message)
-        {
-            PrintBlock.Text += $"{message}{System.Environment.NewLine}";
         }
 
         private void BtApply_Click(object sender, RoutedEventArgs e)

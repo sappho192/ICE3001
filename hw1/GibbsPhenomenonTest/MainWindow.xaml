@@ -56,10 +56,5 @@
                 </TabItem>
             </TabControl>
         </Grid>
-        <TextBlock Name="PrintBlock"
-                   HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                   TextWrapping="Wrap" Text=""
-                   IsEnabled="False"
-                   Visibility="Hidden"/>
     </Grid>
 </Window>
